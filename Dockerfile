@@ -30,6 +30,9 @@ COPY . .
 # Initialize and build the Reflex application
 RUN reflex init
 
+
+ENV API_URL=${API_URL}
+
 # Expose the port the app runs on
 EXPOSE 3000
 
